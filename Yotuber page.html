@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Official website of ItzStarco, a 15-year-old animator and content creator."/>
+  <title>ItzStarco's Official Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to bottom, #8b0000, #330000);
+      position: relative;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #ff4c4c;
+      position: relative;
+      z-index: 2;
+    }
+    .star-title .star {
+      width: 10px;
+      height: 10px;
+      background: #ffb3b3;
+      border-radius: 50%;
+      position: absolute;
+      animation: twirl 5s linear infinite, float 8s ease-in-out infinite;
+    }
+    @keyframes twirl {
+      0% { transform: rotate(0deg) translateX(0px); }
+      100% { transform: rotate(360deg) translateX(100px); }
+    }
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-10px) scale(1.2); }
+      100% { transform: translateY(0) scale(1); }
+    }
+    section a {
+      color: #ffb3b3;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .about-section {
+      padding: 40px 20px;
+      background: #1a0000;
+    }
+    .about-section h2 {
+      color: #ff6666;
+    }
+    .videos-section {
+      padding: 40px 20px;
+      background: #260000;
+    }
+    .videos-section h2 {
+      color: #ff6666;
+      text-align: center;
+    }
+    .video-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px 0;
+    }
+    .video {
+      min-width: 300px;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      border: 2px solid #ff4c4c;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a0000;
+      color: #ffcccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="star-title">
+      <div class="star" style="top: 0; left: 10%;"></div>
+      <div class="star" style="top: 20px; left: 30%;"></div>
+      <div class="star" style="top: 10px; left: 50%;"></div>
+      <div class="star" style="top: 15px; left: 70%;"></div>
+      <div class="star" style="top: 5px; left: 90%;"></div>
+    </div>
+    <h1>ItzStarco</h1>
+    <p>Welcome to the official website of ItzStarco!</p>
+  </header>
+
+  <section style="text-align:center; padding: 20px;">
+    <a href="https://www.youtube.com/channel/UC" target="_blank">YouTube</a>
+    <a href="https://www.roblox.com/users/123456789" target="_blank">Roblox</a>
+  </section>
+
+  <div class="about-section">
+    <h2>About ItzStarco</h2>
+    <p>Welcome to the world of ItzStarco! I'm a passionate 15-year-old animator dedicated to creating fun, exciting, and visually captivating animated content. Whether it's bringing characters to life, experimenting with different animation styles, or sharing behind-the-scenes looks at my process, this website is the place to experience all things animation!</p>
+    <p>From animated shorts and fan-made projects to tutorials and creative tips, I aim to share my love for animation with the world. Join me on this creative journey and stay updated with my latest works, character designs, and much more.</p>
+  </div>
+
+  <div class="videos-section">
+    <h2>ItzStarco's Latest Videos</h2>
+    <div class="video-container">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/6mDv-L46_jo" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/u4k0Qpu3jmo" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/T-3IJu_Fvis" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/9ZOHJy3YErk" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/KIuOn4H1kTQ" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 ItzStarco. All rights reserved.</p>
+  </footer>
+</body>
+</html>
